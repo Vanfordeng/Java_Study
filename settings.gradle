@@ -1,0 +1,1 @@
+include ':app', ':javaio', ':mars_java4android'
