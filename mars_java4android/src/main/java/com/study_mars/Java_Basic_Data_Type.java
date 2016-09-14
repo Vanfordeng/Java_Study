@@ -6,7 +6,7 @@ package com.study_mars;
  */
 public class Java_Basic_Data_Type {
     public static void main(String[] args){
-        //Test 1
+        //Test_1 1
 
     }
     public void exerc01(){
