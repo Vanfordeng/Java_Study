@@ -1,1 +1,1 @@
-include ':app', ':javaio', ':mars_java4android'
+include ':app', ':javaio', ':mars_java4android', ':lixinhua_Java8'

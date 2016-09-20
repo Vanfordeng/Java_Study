@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java_IO.iml" filepath="$PROJECT_DIR$/Java_IO.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaio/javaio.iml" filepath="$PROJECT_DIR$/javaio/javaio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lixinhua_Java8/lixinhua.iml" filepath="$PROJECT_DIR$/lixinhua_Java8/lixinhua.iml" />
       <module fileurl="file://$PROJECT_DIR$/mars_java4android/mars_java4android.iml" filepath="$PROJECT_DIR$/mars_java4android/mars_java4android.iml" />
     </modules>
   </component>
