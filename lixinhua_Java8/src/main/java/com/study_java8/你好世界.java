@@ -1,7 +1,7 @@
 package com.study_java8;
 
 /**
- * Created by Administrator on 2016/9/19.
+ * Created by Doctor on 2016/9/19.
  */
 public class 你好世界 {
     public static void main(String[] args){

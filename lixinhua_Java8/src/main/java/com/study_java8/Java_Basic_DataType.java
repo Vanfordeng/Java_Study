@@ -75,5 +75,18 @@ public class Java_Basic_DataType {
         //字符可以和int型互相转换（以编码的形式出现）
         System.out.println(c);
         System.out.println(num2);
+
+        boolean flag = true;
+        //Java中不允许0,1来表示布尔
+        //数据类型 变量 = “内容”
+        int num1 = 100;
+        double num11 = 99.0;
+        String str = "Hello world!";//字符串变量
+        //如果遇见String的“+”，那么所有的数据类型都想变为String型,而后再执行数据串的连接操作。
+        // （）优先级最高,可以变为先计算再执行+字符串连接
+        str = str +num1+num11;
+        System.out.println(str);//字符串常量
+        //数据类型的转换用户都是小范围自动线大范围转换,如果将大范围变为小范围要使用强制转换
+
     }
 }

@@ -8,6 +8,9 @@ import java.io.InputStreamReader;
  * Created by Doctor on 2016/9/20.
  */
 public class Overlapping {
+    /*
+     * 题目：求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字。例如2+22+222+2222+22222(此时共有5个数相加)，几个数相加有键盘控制。
+     */
     public static void main(String[] args) throws IOException {
         System.out.println("请输入要计算的数字：");
         String inputNumber = new BufferedReader(new InputStreamReader(System.in)).readLine();
