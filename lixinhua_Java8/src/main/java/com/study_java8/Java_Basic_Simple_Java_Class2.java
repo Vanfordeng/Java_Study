@@ -28,7 +28,7 @@ class Province{
         this.cities = cities;
     }
     public City[] getCities(){
-        return  this.cities;
+        return this.cities;
     }
 
     public String getInfo(){
@@ -77,5 +77,6 @@ public class Java_Basic_Simple_Java_Class2 {
             System.out.println(province.getCities()[i].getInfo());
         }
         //如果要对城市进行增加,删除，修改，查找。。会比较麻烦.造成所有困哪的关键在于数组的使用上,但是又不能不适用数组
+
     }
 }
