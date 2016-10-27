@@ -99,7 +99,7 @@ class Action{
     }
 }
 //实际上多对多和一对多从类的定义上来讲区别不是很大
-public class Java_Basic_Simple_Java_Class4 {
+public class  Java_Basic_Simple_Java_Class4 {
     public static void main(String[] args){
         //第一步：设置完整关系
         //1.准备出若干个对象

@@ -11,7 +11,7 @@ public class Java_Basic_Branch_loop {
         //switch的判断不能够使用布尔表达式,它最早的时候只能够进行整数或者
         //字符,但是在JDK 1.5之后,支持了枚举。在JDK 1.7之后支持了String
         //在每一个Case里面出现的break语句,表示的是停止case的执行，因为switch语句默认是从满足条件的第一个
-        //语句开始往下执行。下列输出：1,3和没有内容。如果加上bread,可跳出case执行
+        //语句开始往下执行。下列输出：1,3和没有内容。如果加上break,可跳出case执行
         int ch =1;
         switch (ch){
             case 2:

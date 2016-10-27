@@ -159,7 +159,7 @@ class Link1{ //链表类，外部能够看见的 只有这一个类
         if (index >= this.count){  //超过了查询范围
             return null;  //没有数据
         }
-        this.foot  = 0 ;//表示从前往后查找
+        this.foot  = 0 ;//表示从前往后查找  ：foot为全局变量，会在set或者get之后改变值，所有每次使用的时候需要重新赋初值为0
         return this.root.getNode(index);
     }
     //------------修改指定索引内容：public boolean set(int index,数据类型 变量)------------------------------------

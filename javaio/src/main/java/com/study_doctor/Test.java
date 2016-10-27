@@ -3,31 +3,32 @@ package com.study_doctor;
 /**
  * Created by Doctor on 2016/9/27.
  */
+
+class Book{
+    protected int price = 12;
+    private String name = "BOOK";
+
+    public void print(){
+        System.out.println(price+"\t:"+name );
+    }
+}
+
+class BookA extends Book{
+    public void fun(){
+        System.out.println("Book类的price属性的值：" + super.price);
+    }
+}
+
 public class Test {
-    static long sum = 0;
-    static long fac = 0;
-
     public static void main(String[] args){
-//            float fm = 1f;
-//            float fz = 1f;
-//            float temp;
-//            float sum = 0f;
-//            for (int i=0;i<20;i++){
-//                temp = fm;
-//                fm = fz;
-//                fz = fz + temp;
-//                sum += fz/fm;
-//                //System.out.println(sum);
-//            }
-//            System.out.println(sum);
-
-
-        long sum = 0;
-        long fac = 1;
-        for(int i=1; i<=10; i++) {
-            fac = fac * i;
-            sum += fac;
+        int i=10;
+        int y=0;
+        try{
+            int x = i/y;
+        }catch (Exception e){
+        }finally {
+            System.out.println("出现异常了，我也执行了");
         }
-        System.out.println(sum);
+        System.out.println("出现异常了,在finally之后我也执行了");
     }
 }

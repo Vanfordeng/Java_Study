@@ -2,6 +2,7 @@ package com.study_java8;
 
 /**
  * Created by Doctor on 2016/10/10.
+ * 代码块
  */
 class  Book5{
     public Book5(){
