@@ -6,6 +6,7 @@ package com.study_java8;
  * 泛型方法不一定非要定义在支持泛型的类里面，在之前所编写的所有存在有泛型的方法都是在泛型支持类里面定义
  *
  */
+class Temp{}  //排序用
 public class Java_NewFeather_Generics_Method {
     public static void main(String[] args) {
         System.out.println(fun(100));
@@ -15,6 +16,9 @@ public class Java_NewFeather_Generics_Method {
     //泛型方法的定义：T的类型由传入的参数类型决定
     public static <T> T fun(T t){
 //        T tt = t + t2 + t3;
+        return t;
+    }
+    public <S,T,M> T print(S s1,S s2,T t){
         return t;
     }
 

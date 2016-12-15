@@ -34,7 +34,7 @@ package com.study_java8;
 class Province1{
     private int pid;
     private String name;
-//    private City1[] cities;
+//    private City[] cities;
     //将City1[]数组用链表Link1替换：链表最好的使用就是横向替代掉对象数组，链表没有长度限制
     private Link1 cities = new Link1();
 
@@ -365,7 +365,7 @@ public class Java_Basic_LinkedList1 {
         pro.getCities().add(c1);
         pro.getCities().add(c2);
         pro.getCities().add(c3);
-        //第二步：取出关系：new Province1(1,"河北省")
+        //第二步：取出关系：new Province(1,"河北省")
         System.out.println(pro.getInfo());
         City1[] cities =  pro.getCities().toArray();
         for (int i = 0; i <cities.length ; i++) {

@@ -8,7 +8,7 @@ package com.study_mars;
 // 运行检查异常错误,
 //    Tips:Runtime异常又分为：checkException和UnCheckException.checkException编译器会要求代码必须加上一次捕获
 //    Tips:try catch保证在代码有异常出错以后,代码后到的指令流可以正常运行
-//    Tips:程序员对Error无能为力,只能处理Eception
+//    Tips:程序员对Error无能为力,只能处理Exception
 public class Java_Basic_Exception {
     public static void main(String args[]){
         System.out.println(1);

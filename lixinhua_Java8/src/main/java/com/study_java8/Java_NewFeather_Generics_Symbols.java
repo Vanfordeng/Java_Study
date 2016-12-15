@@ -2,6 +2,7 @@ package com.study_java8;
 
 /**
  * Created by Doctor on 2016/10/27.
+ * 泛型：通配符   主要解决方法中调用泛型类型的时候,如果需要在主程序中修改了泛型类型。那么所有方法的泛型类型都需要修修改
  */
 class Messages<T>{
     T msg;
@@ -24,7 +25,7 @@ public class Java_NewFeather_Generics_Symbols {
         fun(m2);
     }
 
-    //但泛型类作为方法的参数时候,无法根据泛型的标记不同而达到方法重载的目的（因为方法的重载认的知识参数的类型和个数,与泛型无关）.那么就会出现：一旦泛型的标记类型改变后,方法的标记也必须跟着改变。不利于代码维护
+    //但泛型类作为方法的参数时候,无法根据泛型的标记不同而达到方法重载的目的（因为方法的重载认的知识 @参数的类型@ 和个数,与泛型无关）.那么就会出现：一旦泛型的标记类型改变后,方法的标记也必须跟着改变。不利于代码维护
 //    public static void fun(Messages<Integer> temp){  //无法重载
 //        System.out.println(temp.getMsg());
 //    }
@@ -36,10 +37,10 @@ public class Java_NewFeather_Generics_Symbols {
     //}
     /**@所以现在最应该解决的是，需要有一种方式可以接收一个类的任意的泛型类型，但是不可以修改只能够去除,那么就可以使用“？”*/
     public static void fun(Messages<?>/*明确表示不能够设置,只能够取出数据*/ temp){  // TODO: 2016/10/27 所以“？”来接收泛型是用在方法上？
-        //temp.setMsg(100);  //capture <?> 无法设置内容
+        //temp.setMsg(100);  //提示编译错误：capture  of <?> 无法设置内容、
         System.out.println(temp.getMsg());
     }
-    //在“？"通配符基础上还会有两个字的通配符：
+    //在“？"通配符基础上还会有两个子的通配符：
     // ? extends 类：设置泛型上限；可以在声明上和方法参数上使用
       //|-:? extends Number:意味着可以设置Number或者Number的子类：Double,Integer...
              //class Messages<T extends Number>：

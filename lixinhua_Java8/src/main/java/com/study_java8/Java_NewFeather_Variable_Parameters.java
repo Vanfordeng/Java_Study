@@ -25,7 +25,7 @@ public class Java_NewFeather_Variable_Parameters {
     }
     //这以功能在JDK 1.5之后，在JAVA中开始支持
     /*
-     *[public][protected][private][static][final][abstract] 返回值类型  方法名称（参数类型...变量）{  //重点就在...上，使用的时候也是利用数组的方式来使用
+     *[public][protected][private][static][final][abstract] 返回值类型  方法名称（参数类型...变量）{  //重点就在...上，使用的时候也是利用数组的方式来使用，TODO 可变参数允许为空
      * [return[返回值]];}
      */
     //可变参数就是数组的变形应用，在大部分开发的情况下,应该要求参数的个数是准确的，对于这样的开发往往不会用于应用型的开发上，用于一些程序相关系统类的设计使用上
