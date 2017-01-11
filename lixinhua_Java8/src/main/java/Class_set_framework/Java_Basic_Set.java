@@ -95,7 +95,7 @@ public class Java_Basic_Set {
         Set<Book1> book1Set = new HashSet<Book1>();   //如果在定义了Comparable接口后把TreeSet换为HashSet()。会出现数据重复的情况。
         //[书的名称：APS开发	书的价格：78.8, 书的名称：Java开发	书的价格：79.8, 书的名称：C#开发	书的价格：77.8, 书的名称：Java开发	书的价格：79.8, 书的名称：Android开发	书的价格：79.8]
         //Todo 关于重复元素的说明
-        //Todo 很明显,Compareable接口只能负责TreeSet子类进行重复元素的判断,它并不是真正的用于能够进行重复元素验证的操作（在排序的情况下使用）
+        //Todo 很明显,Comparable接口只能负责TreeSet子类进行重复元素的判断,它并不是真正的用于能够进行重复元素验证的操作（在排序的情况下使用）
         //Todo 如果要想判断重复元素那么只能够依靠Object类中说提供的两个方法：第一步：根据HashCode()取得对象内容,第二部：使用equals比较两个对象内容是否一致
         //Todo |-:取得哈希码：public int hashCode()
         //   1. |-先判断对象的哈希码是否相同,依靠哈希码取得一个对象的内容

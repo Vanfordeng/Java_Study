@@ -1,5 +1,6 @@
 package com.study_java8;
 
+import java.util.Scanner;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -26,7 +27,7 @@ class MyDemo{
 }
 public class Java_NewFeather8_Builtin_function_interface {
     public static void main(String[] args) {
-        //功能性接口(Function)：public Interface Function<T,R>{public R apply(T t);}
+        //功能型接口(Function)：public Interface Function<T,R>{public R apply(T t);}
         // public boolean startsWith(String prefix);
         // public static String valueOf(Object obj)
         Function<String,Boolean> function =  "##hello":: startsWith;
@@ -50,7 +51,10 @@ public class Java_NewFeather8_Builtin_function_interface {
         //断言型接口：public interface Predicate<T>{public boolean test(T t);}
         //  public boolean equalsIgnoreCase(String anotherString)
         Predicate<String> predicate =  "hello" :: equalsIgnoreCase;
+        Predicate<String> pre = (x) -> x.equalsIgnoreCase("hello");  //lambda表达式针对的是拥有一个函数的接口，内置的功能型接口（函数式接口）也是函数的接口。可以用lambda表达式实例化对象
+        //对于只包含一个抽象方法的接口，你可以通过lambda表达式来创建该接口的对象，这种接口被称为函数式接口。
         System.out.println(predicate.test("hello1"));
+        System.out.println(pre.test("hello"));
         System.out.println("-----------------------------------------------------------------------");
 
         /**@这几个接口包含了所有可能出现的方法引用，也是函数式接口的代表,但是有许多的函数式接口与它类似,参见：java.util.function*/

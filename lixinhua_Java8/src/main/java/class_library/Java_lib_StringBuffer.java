@@ -3,7 +3,7 @@ package class_library;
 /**
  * Created by Doctor on 2016/11/2.
  * String 类的特点：
- *   |-- String 类对象有两张实例化方式：
+ *   |-- String 类对象有两种实例化方式：
  *          |- 直接实例化：只开辟一块堆内存空间,可以自动入池
  *          |- 构造方法：开辟两块堆内存空间,不会自动入池,使用intern()手工入池。
  *   |-- 任何一个字符串都是String类的匿名对象

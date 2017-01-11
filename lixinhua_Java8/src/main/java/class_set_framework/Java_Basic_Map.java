@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * Created by Doctor on 2016/12/13.
  * Map
- * Collection每一次都指挥保存一个对象,而Map主要是负责保存一对对象的信息。
+ * Collection每一次都只会保存一个对象,而Map主要是负责保存一对对象的信息。
  */
 public class Java_Basic_Map {
     public static void main(String[] args) {
@@ -78,7 +78,7 @@ public class Java_Basic_Map {
          * 数据安全         线程安全                                         非线程安全
          * 输出          不允许key或者value内容为null                  允许key或者value内容为null
          */
-        //Todo 而实习的使用之中,遇见Map接口基本就使用HashMap类
+        //Todo 而实际的使用之中,遇见Map接口基本就使用HashMap类
 
         //Todo 关于Map使用Iterator输出的问题（核心）
         //在之前强调过,只要是集合的输出那么一定要使用Iterator完成,但是在整个Map接口里面,并没有定义任何可以返回Iterator接口对象的方法
